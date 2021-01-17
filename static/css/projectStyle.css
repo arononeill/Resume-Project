@@ -1,0 +1,16 @@
+.sidebarProject {
+    margin-left: 2px;
+}
+
+
+
+/* MEDIA QUERIES - Monitor Devices */
+@media (min-width: 1900px) {
+    .sidebarProject {
+        margin-left: 20px;
+    }
+
+    #noScrollBody2 {
+        width: 75%;
+    }
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% csrf_token %}
+<head>
+    <link rel="shortcut icon" href="https://nedbatchelder.com/pix/django-icon-256.png">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/projectStyle.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrapNavbar.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aron O'Neill</title>
+    </head>
+
+    <body id="noScrollBody" class="noScrollBodyProject">
+
+        <div class="wrapper" id="wrapper">
+            <!-- Left Sidebar Section -->
+            <div id="sidebar" class="sidebarProject">
+              <div class="sidebar-header h-auto">
+                <div class="profileSection1 text-center p-md-1 p-0">
+                    <img class="img-fluid profile-image m-md-3 m-2" src="{% static "images/profilePic.jpeg" %}" alt="My image"/>
+                  <h5 class="nameTitle">
+                      Aron O'Neill
+                  </h5>
+                  <h5 class="jobTitle">
+                      Software Developer
+                  </h5>
+                </div>
+              </div>
+
+              <div class="scrollbar list-unstyled components">
+                <div class="scroll-content">
+                  <div class="personalInfo">
+                    <ul class="p-1 m-0">
+                      <li>
+                          <h6>Residence:</h6>
+                          <span>Ireland</span>
+                      </li>
+                      <li>
+                          <h6>City:</h6>
+                          <span>Dublin</span>
+                      </li>
+                      <li>
+                          <h6>Age:</h6>
+                          <span>22</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="profileDividerDropdown1Skills">
+                  </div>
+
+                  <!-- Skills Section -->
+                  <div class="skillsSection">
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info">
+                          <span>C# /.Net</span>
+                        </div>
+                        <div class="progress-line csharp">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line jquery">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>AWS Services</span>
+                        </div>
+                        <div class="progress-line aws">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar lastSkillBar">
+                        <div class="info">
+                          <span>Github / Bitbucket</span>
+                        </div>
+                        <div class="progress-line github">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="profileDivider">
+                      </div>
+
+                      <!-- Skills Part Section -->
+                      <ul class="skillsSubSection art-knowledge-list p-0">
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> React / Node.js <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> SQL Developer <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> HTML / CSS <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> C <br>
+                      </ul>
+
+                      <div class="profileDividerSkillsPart2">
+                      </div>
+
+                      <!-- Language Skills Section -->
+                      <div class="languageSection row p-md-2 p-0">
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:90deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              100%
+                            </p>
+                          </div><!-- 0% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            English
+                          </h6>
+                        </div>
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:45deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              90%
+                            </p>
+                          </div><!-- 12.5% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            Irish
+                          </h6>
+                        </div>
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:0deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              75%
+                            </p>
+                          </div><!-- 12.5% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            French
+                          </h6>
+                        </div>
+                      </div>
+
+                      <div class="profileDividerCV">
+                      </div>
+
+
+                      <div class="art-links-frame text-center w-80 p-15-15 mb-md-5 mb-3">
+                        <a href="https://github.com/arononeill/Resume-Project/blob/main/O'Neill%2C%20Aron%20C16466214%20DT228.pdf" class="art-link" target="_blank">Download cv
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="container outerMediaLinks p-0">
+                  <div class="art-ls-social mediaLinks row text-center pt-2 pb-2 m-0">
+                    <div class="col-4 p-0">
+                      <a href="https://www.linkedin.com/in/aron-o-neill-474757161/" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 p-0">
+                      <a href="https://github.com/arononeill/" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 p-0">
+                      <a href="https://www.youtube.com/channel/UCL2Cfae4d8Rb7ykYEWPycEw?view_as=subscriber" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="">
+
+                <div id="content" class="contentProject">
+                  <div id="contentInner">
+                    <div class="contentHeader d-md-none d-block mw-100 pb-1">
+                      <div class="container col-2 text-left ml-0 p-0">
+                        <button type="button" id="sidebarCollapse" class="leftMenuBtn btn d-lg-none d-md-block">
+                          <i class="leftMenuIcon fa fa-ellipsis-v" aria-hidden="true"></i>
+                          <span>Toggle 212</span>
+                        </button>
+                      </div>
+                      <div class="container col-2 text-right mr-0 p-0">
+                        <button class="menu-bar-btn d-inline-block ml-auto rightSideBarBtn " type="button" id="rightSideBarBtnId">
+                          <i class="fa fa-navicon fa-2x rightMenuIcon"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <nav class="navbar navbar-light p-0 pt-2 mb-0">
+                        <div class="container-fluid homeDiv imageContainerProject p-md-0 p-4">
+
+                            <button type="button" id="sidebarCollapse2" class="leftMenuBtn btn d-lg-none d-md-block d-md-inline-block d-inline-none d-none ">
+                              <i class="leftMenuIcon fa fa-ellipsis-v" aria-hidden="true"></i>
+                            <button class="menu-bar-btn d-md-inline-block d-inline-none d-none ml-auto rightSideBarBtn rightSideBarBtn2" type="button" id="rightSideBarBtnId2">
+                              <i class="fa fa-navicon fa-3x p-1 rightMenuIcon rightMenuIconProjectBtn"></i>
+                            </button>
+
+                        </div>
+                    </nav>
+
+                    <div class="resumeContent">
+                        <h2 class="text-md-left text-center pt-0">Resume Website</h2>
+
+                        <h4 class="resumeTitle text-md-left text-center">
+                            Project Details
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-md-8 col-12 p-3">
+                                <div class="subContainer subContainerResume">
+                                    <h6 class="resumeSubTitle pb-1">
+                                        Description:
+                                    </h6>
+                                    <p class="mb-0">
+                                        The idea of owning my own resume website came about near the end of college in 2020. I have worked on numerous projects during and outside of college in the last four years and
+                                        I decided that I wanted somewhere to showcase my work so that it can easily shared with others. There are existing applications for sharing work such as GitHub but I wanted
+                                        one central location for sharing each project description, code & demo. The front-end of this application was developed using HTML5, CSS and JavaScript, while the hosting was configured manually
+                                        using Docker as the packaging software, Digital Ocean as the cloud provider and Nginx as the SSL cert provider.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12 p-3">
+                                <div class="subContainer subContainerResume">
+                                    <h6 class="resumeSubTitle pb-md-3 pb-4">
+                                        Project Summary:
+                                    </h6>
+                                    <div class="row pb-4">
+                                        <div class="RightPanelResumeHeading col-6">
+                                            Start Date:
+                                        </div>
+                                        <div class="RightPanelResumeText col-6">
+                                            01.09.20
+                                        </div>
+                                    </div>
+                                    <div class="row pb-4">
+                                        <div class="RightPanelResumeHeading col-6">
+                                            End Date:
+                                        </div>
+                                        <div class="RightPanelResumeText col-6">
+                                            17.01.21
+                                        </div>
+                                    </div>
+                                    <div class="row pb-4">
+                                        <div class="RightPanelResumeHeading col-6">
+                                            Status:
+                                        </div>
+                                        <div class="RightPanelResumeText col-6">
+                                            Ongoing
+                                        </div>
+                                    </div>
+                                    <div class="row pt-md-4 pt-3">
+                                        <div class="col-3">
+                                            <a href="https://github.com/arononeill/Resume-Project" target="_blank">
+                                                <i class="fa fa-github resumeProjectLink" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <h4 class="resumeTitle text-md-left text-center pb-3">
+                            Development
+                        </h4>
+
+                        <div class="row m-0">
+                            <div class="container imageResumeContainer text-center p-0">
+
+                                <div id="carouselExampleIndicators" class="carousel slide pointer-event m-auto" data-ride="carousel">
+                                    <div class="carousel-inner tinted">
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="{% static "images/resumeWebsite/resumeWebsite3.jpg" %}" alt="My image"/>
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img class="w-100" src="{% static "images/resumeWebsite/resumeWebsite2.jpg" %}" alt="My image"/>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="w-100" src="{% static "images/resumeWebsite/resumeWebsite1.jpg" %}" alt="My image"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row projectDevelopmentArrowsContainer p-3">
+                                    <div class="container projectDevelopmentArrows">
+
+                                        <a class="carousel-control-next projectDevelopmentArrowsHref1" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="fa fa-chevron-left fa-2x arrowQuote2" aria-hidden="true"></span>
+                                        </a>
+
+                                        <a class="carousel-control-next projectDevelopmentArrowsHref2" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="fa fa-chevron-right fa-2x arrowQuote2" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <h4 class="resumeTitle text-md-left text-center">
+                            Evaluation
+                        </h4>
+
+                        <div class="row">
+                            <div class="col-12 p-3">
+                                <div class="subContainer resultContainer">
+                                    <p class="mb-0">
+                                        I will be continuously adding to this resume website as I further enhance my skills.
+                                        For this reason, it is hard to evaluate the end product. I have achieved what I set out to in
+                                        the sense that I successfully developed the front-end of the website to include areas such as skills,
+                                        projects and education while being compatible with any device. I also manually obtained the site's
+                                        SSL cert before deploying it using Docker and Digital Ocean. Overall I'm quite happy with the current
+                                        website but I feel there is room for improvement. This includes additional sections for areas such as a
+                                        certifications and security. These sections will be added later this year.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row p-3">
+                            <div class="col-12">
+                                <div class="row FooterContainer text-center text-uppercase">
+                                    <div class="projectPanelInnerContentsLink col-4">
+                                        <a class="nextProjectLink" href="{% url 'unity_layout' %}">
+                                            <i class="fa fa-chevron-left prevProjectArrow pr-2"></i>
+                                            Previous Project
+                                        </a>
+                                    </div>
+                                    <div class="projectPanelInnerContentsLink col-4">
+                                        <a class="nextProjectLink allProjectLink" href="{% url 'index' %}">
+                                            All Projects
+                                        </a>
+                                    </div>
+                                    <div class="projectPanelInnerContentsLink col-4">
+                                        <a class="nextProjectLink" href="{% url 'tradespeople_layout' %}">
+                                            Next Project
+                                            <i class="fa fa-chevron-right nextProjectArrow pr-2"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row FooterRow2 pt-0 p-3">
+                            <div class="subContainer FooterContainer2 w-100">
+                                <footer class="row footer">
+                                    <div class="col-6 text-left">© 2021 All Rights Reserved.
+
+                                    </div>
+                                    <div class="col-6 text-md-right text-left">
+                                        Email:
+                                        <a class="emailFooterLink" href="mailto:enquires@arononeill.ie" target="_blank">enquires@arononeill.ie
+                                        </a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- Collapsed Right Sidebar -->
+              <div class="rightSideBar" id="navbarSupportedContent">
+
+                <div class="rightSideBarFrame">
+                  <div class="rightMenuHeader d-lg-none d-block">
+                    <a id="rightMenuCloseHref2">
+                      <i class="fa fa-close rightMenuCloseBtn"></i>
+                    </a>
+                  </div>
+                  <ul class="nav navbar-nav rightNavMenuUl w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="hrefLink1" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hrefLink2" href="{% url 'index' %}">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hrefLink3" href="{% url 'index' %}">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hrefLink4" href="{% url 'index' %}">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="hrefLink5" href="{% url 'index' %}">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+
+
+
+          <!-- jQuery CDN - Slim version (=without AJAX) -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- Popper.JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+          <!-- Script -->
+          <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+
+        <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/scriptProject.js' %}" ></script>
+
+    </body>
+    {% endblock %}
+</html>

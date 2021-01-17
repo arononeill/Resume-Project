@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% csrf_token %}
+<head>
+    <link rel="shortcut icon" href="https://nedbatchelder.com/pix/django-icon-256.png">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrapNavbar.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="eFsCqAEsMkR06Ufl7BUYI6x-Vr0NyXcnOgPDFNY1yeU" />
+    <title>Aron O'Neill</title>
+    </head>
+
+    <body id="noScrollBody">
+
+        <div class="wrapper" id="wrapper">
+            <!-- Left Sidebar Section -->
+            <div id="sidebar">
+              <div class="sidebar-header h-auto">
+                <div class="profileSection1 text-center p-md-1 p-0">
+                    <img class="img-fluid profile-image m-md-3 m-2" src="{% static "images/profilePic.jpeg" %}" alt="My image"/>
+                  <h5 class="nameTitle">
+                      Aron O'Neill
+                  </h5>
+                  <h5 class="jobTitle">
+                      Software Developer
+                  </h5>
+                </div>
+              </div>
+
+              <div class="scrollbar list-unstyled components">
+                <div class="scroll-content">
+                  <div class="personalInfo">
+                    <ul class="p-1 m-0">
+                      <li>
+                          <h6>Residence:</h6>
+                          <span>Ireland</span>
+                      </li>
+                      <li>
+                          <h6>City:</h6>
+                          <span>Dublin</span>
+                      </li>
+                      <li>
+                          <h6>Age:</h6>
+                          <span>22</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="profileDividerDropdown1Skills">
+                  </div>
+
+                  <!-- Skills Section -->
+                  <div class="skillsSection">
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info">
+                          <span>C# /.Net</span>
+                        </div>
+                        <div class="progress-line csharp">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line jquery">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>AWS Services</span>
+                        </div>
+                        <div class="progress-line aws">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar lastSkillBar">
+                        <div class="info">
+                          <span>Github / Bitbucket</span>
+                        </div>
+                        <div class="progress-line github">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="profileDivider">
+                      </div>
+
+                      <!-- Skills Part Section -->
+                      <ul class="skillsSubSection art-knowledge-list p-0">
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> React / Node.js <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> SQL Developer <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> HTML / CSS <br>
+                        <i class="skillTicks fa fa-check w-10 mr-2" aria-hidden="true"></i> C <br>
+                      </ul>
+
+                      <div class="profileDividerSkillsPart2">
+                      </div>
+
+                      <!-- Language Skills Section -->
+                      <div class="languageSection row p-md-2 p-0">
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:90deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              100%
+                            </p>
+                          </div><!-- 0% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            English
+                          </h6>
+                        </div>
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:45deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              90%
+                            </p>
+                          </div><!-- 12.5% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            Irish
+                          </h6>
+                        </div>
+                        <div class="col-3 p-0 m-auto">
+                          <div class="box p-3" style="--v:0deg;--s:0">
+                            <p class="languagePercentage text-center">
+                              75%
+                            </p>
+                          </div><!-- 12.5% -->
+                          <h6 class="language text-center pt-md-1 pt-3">
+                            French
+                          </h6>
+                        </div>
+                      </div>
+
+                      <div class="profileDividerCV">
+                      </div>
+
+
+                      <div class="art-links-frame text-center w-80 p-15-15 mb-md-5 mb-3">
+                        <a href="https://github.com/arononeill/Resume-Project/blob/main/O'Neill%2C%20Aron%20C16466214%20DT228.pdf" class="art-link" target="_blank">Download cv
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="container outerMediaLinks p-0">
+                  <div class="art-ls-social mediaLinks row text-center pt-2 pb-2 m-0">
+                    <div class="col-4 p-0">
+                      <a href="https://www.linkedin.com/in/aron-o-neill-474757161/" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 p-0">
+                      <a href="https://github.com/arononeill/" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                    <div class="col-4 p-0">
+                      <a href="https://www.youtube.com/channel/UCL2Cfae4d8Rb7ykYEWPycEw?view_as=subscriber" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Page Content  -->
+            <div id="content" class="">
+              <div class="container p-0">
+                  <div id="contentInner">
+                    <div class="contentHeader d-md-none d-block mw-100">
+                      <div class="container col-2 text-left ml-0 p-0">
+                        <button type="button" id="sidebarCollapse" class="leftMenuBtn btn d-lg-none d-md-block">
+                          <i class="leftMenuIcon fa fa-ellipsis-v" aria-hidden="true"></i>
+                          <span>Toggle 212</span>
+                        </button>
+                      </div>
+                      <div class="container col-2 text-right mr-0 p-0">
+                        <button class="menu-bar-btn d-inline-block ml-auto rightSideBarBtn " type="button" id="rightSideBarBtnId">
+                          <i class="fa fa-navicon fa-3x rightMenuIcon"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="container p-0 fixPhoneWidth">
+                        <nav class="navbar navbar-light p-0" id="home">
+                            <div class="container-fluid homeDiv imageContainer p-md-0 p-4">
+                                <img class="headerImage d-md-block d-none w-100" src="{% static "images/headerImage.jpg" %}" alt="My image"/>
+                                <img class="headerImagePhone d-md-none d-block" src="{% static "images/headerImagePhone.jpg" %}" alt="My image"/>
+
+                                <div class="container imageTextContainer w-100 h-100 p-0">
+                                  <div class="nameContainer">
+                                    <h3>Aron
+                                      <span>O'Neill</span>
+                                    </h3>
+                                  </div>
+                                  <div class="typingContainer p-0">
+                                    <p class="type" id="type">Freelancer, Web & Software Developer</p>
+                                  </div>
+                                </div>
+
+                                <button type="button" id="sidebarCollapse2" class="leftMenuBtn btn d-lg-none d-md-block d-md-inline-block d-inline-none d-none ">
+                                  <i class="leftMenuIcon fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </button>
+                                <button class="menu-bar-btn d-md-inline-block d-inline-none d-none ml-auto rightSideBarBtn" type="button" id="rightSideBarBtnId2">
+                                  <i class="fa fa-navicon fa-3x p-1 rightMenuIcon"></i>
+                                </button>
+
+                            </div>
+                        </nav>
+
+                        <div class="container homeFacts text-center mb-4" >
+                          <div class="row w-100">
+                            <div class="col-md-4 col-6 w-100 p-0 pl-md-0 pl-4">
+                              <div class="row">
+                                <div class="col-md-5 col-3 text-right p-0" id="value1">0</div>
+                                <div class="fact m-auto col-7 p-md-0 p-0 text-md-center text-left">
+                                  Years Experience
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-6 w-100 p-0">
+                              <div class="row">
+                                <div class="col-md-5 col-3 text-right p-0" id="value2">0</div>
+                                <div class="fact m-auto col-7 p-md-0 p-0 text-md-center text-left">
+                                  Completed Projects
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 d-md-block d-none w-100 p-0">
+                              <div class="row">
+                                <div class="col-5 text-right p-0" id="value3">0</div>
+                                <div class="fact m-auto col-7 p-0">
+                                  Happy Customers
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="container ProjectsTitleContainer">
+                            <div class="container p-0" ></div>
+                          <h4 class="sectionTitle pl-2 pt-md-0 pt-4 pb-md-0 pb-4">
+                            My Projects
+                          </h4>
+                        </div>
+
+                        <!-- PROJECTS SECTION -->
+                        <div class="row projectPanelContainer">
+
+                          <!-- Project Overview 1 -->
+                          <div class="projectPanel container col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                Resume Website
+                              </h5>
+                              <div class="projectPanelInnerContents">
+                                <div>
+                                  <p class="mb-0">I created this resume website to better showcase my projects and the methodology used to obtain the results. It was deployed using Docker, Digital Ocean & Nginx. </p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="{% url 'resume_layout' %}">
+
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Project Overview 2 -->
+                          <div class="projectPanel container col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                Tradespeople Near Me
+                              </h5>
+                              <div class="projectPanelInnerContents">
+                                <div>
+                                  <p class="mb-0">Tradespeople Near Me was my final year project and is a Progressive Web App (PWA) that allows users to find tradespeople in their area using a geo-boundary algorithm. </p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="{% url 'tradespeople_layout' %}">
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Project Overview 3 -->
+                          <div class="projectPanel container col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                McCabeMcGinn
+                              </h5>
+                              <div class="projectPanelInnerContents">
+                                <div>
+                                  <p class="mb-0">This project involved the development of a website for one of the country's leading fit-out specialists. It was developed during a busy finaly year of college.</p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="{% url 'mcmg_layout' %}">
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Project Overview 4 -->
+                          <div class="projectPanel projectPanelBottom container col-lg-4 col-md-6 col-12 col-12 mb-4">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                MERN Stack App
+                              </h5>
+                              <div class="projectPanelInnerContents">
+                                <div>
+                                  <p class="mb-0">This application is a similar project to Tradespeople Near Me and was created to compare different technolgies. These include MongoDB, Express, React & Node.js.</p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="{% url 'mern_layout' %}">
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Project Overview 5 -->
+                          <div class="projectPanel projectPanelBottom container col-lg-4 col-md-6 col-12 col-12 mb-4">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                Unity Game
+                              </h5>
+                              <div class="projectPanelInnerContents">
+                                <div>
+                                  <p class="mb-0">Space Escape was created in Unity using C# during 2nd of college. It was developed with two other students using GitHub as the source management tool.</p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="{% url 'unity_layout' %}">
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Project Overview 6 -->
+                          <div class="projectPanel projectPanelBottom container col-lg-4 col-md-6 col-12">
+                            <div class="projectPanelInner projectPanelInnerProject">
+                              <h5 class="projectPanelInnerContents">
+                                Smart Business Card
+                              </h5>
+                              <div class="projectPanelInnerContents" >
+                                <div>
+                                  <p class="mb-0">This project is currently ongoing and involves the creation of a Progressive Web App (PWA) to store and manage one's business contacts. Coming Soon!</p>
+                                </div>
+                              </div>
+                              <div class="projectPanelInnerContentsLink pt-4">
+                                <a href="#">
+                                  Read More
+                                  <i class="fa fa-chevron-right pl-2" id="education"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      <div class="row p-0" >
+                        <!-- Education  Container -->
+                        <div class="EducationExperienceContainer col-md-6 col-12" >
+                            <div id="educationLink"></div>
+                            <div id="projects"></div>
+
+                            <div class="lineTrack">
+                                <!-- Education Overview 1 : TUD -->
+                                <div class="projectPanel container EducationInnerContainer h-auto mb-4">
+                                    <div class="container ProjectsTitleContainer">
+                                        <h4 class="sectionTitle pl-2 pt-md-0 pt-4 pb-md-0 pb-4">
+                                            Education
+                                        </h4>
+                                    </div>
+
+                                    <div class="art-timeline-mark-light art-timeline-mark-light1"></div>
+                                    <div class="art-timeline-mark art-timeline-mark1"></div>
+                                    <div class="projectPanelInner educationArtEffectsContainer ">
+
+                                        <div class="container itemInnerContent itemInnerEducationContentMarker1 p-0">
+                                            <div class="container educationInnerHeader p-0">
+                                                <div class="container leftSide col-12 p-0">
+                                                    <h5 class="projectPanelInnerContents p-2">
+                                                        Technology University Dublin
+                                                    </h5>
+                                                    <h5 class="educationPosition p-1">
+                                                        Student
+                                                    </h5>
+                                                </div>
+                                                <div class="container rightSide col-md-10 col-9 ml-0 p-0">
+                                                    <div class="date">
+                                                        <span> sep 2016 - may 2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projectPanelInnerContents">
+                                                <div>
+                                                    <p class="mb-0">Bachelor's Degree in Computer Science from Technology University Dublin. The certificate will be attached when the university can be bothered to send it out. </p>
+                                                </div>
+                                            </div>
+                                            <div class="educationExperienceLink pt-4">
+                                                <a href="resumeProject.html">
+                                                    Diplome
+                                                    <i class="fa fa-chevron-right pl-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Education History Overview 2 : SEM -->
+                                <div class="projectPanel container EducationInnerContainer h-auto mb-4">
+                                    <div class="art-timeline-mark-light art-timeline-mark-light2"></div>
+                                    <div class="art-timeline-mark art-timeline-mark2"></div>
+                                    <div class="projectPanelInner educationArtEffectsContainer">
+                                        <div class="container itemInnerContent itemInnerEducationContentMarker2 p-0 pb-4">
+                                            <div class="container educationInnerHeader p-0">
+                                                <div class="container leftSide col-12 p-0">
+                                                    <h5 class="projectPanelInnerContents p-md-2 p-0">
+                                                        St Macartan's College Monaghan
+                                                    </h5>
+                                                    <h5 class="educationPosition p-1">
+                                                        Student
+                                                    </h5>
+                                                </div>
+                                                <div class="container rightSide col-md-10 col-9 ml-0 p-0">
+                                                    <div class="date">
+                                                        <span> sep 2010 - june 2016 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projectPanelInnerContents">
+                                                <div>
+                                                    <p class="mb-0">Completed the Leaving Certificate while attending St Macartan's College.  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- ***************** Experience  Container Section ******************** -->
+                        <div class="EducationExperienceContainer col-md-6 col-12 ">
+                            <div id="experience"></div>
+
+                            <div class="lineTrackWork">
+                            <!-- Experience Overview 1 : Irish Life -->
+                                <div class="projectPanel container EducationInnerContainer h-auto mb-4 pb-4">
+                                    <div class="container ProjectsTitleContainer">
+                                        <h4 class="sectionTitle pl-2 pt-md-0 pt-4 pb-md-0 pb-4">
+                                            Work History
+                                        </h4>
+                                    </div>
+
+                                    <div class="art-timeline-mark-light art-timeline-mark-light1"></div>
+                                    <div class="art-timeline-mark art-timeline-mark1"></div>
+                                    <div class="projectPanelInner educationArtEffectsContainer">
+
+                                        <div class="container itemInnerContent itemInnerExperienceContentMarker1 p-0 pb-4">
+                                            <div class="container educationInnerHeader p-0">
+                                                <div class="container leftSide col-12 p-0">
+                                                    <h5 class="projectPanelInnerContents p-2">
+                                                        Irish Life
+                                                    </h5>
+                                                    <h5 class="educationPosition p-1">
+                                                        Software Technician
+                                                    </h5>
+                                                </div>
+                                                <div class="container rightSide col-md-10 col-9 ml-0 p-0 ">
+                                                    <div class="date">
+                                                        <span> july 2020 - present </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projectPanelInnerContents">
+                                                <div>
+                                                    <p class="mb-0">Working predominately with Dynamics CRM, C# and .Net framework</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Experience Overview 2 : McCabeMcGinn -->
+                                <div class="projectPanel container EducationInnerContainer h-auto mb-4">
+
+                                    <div class="art-timeline-mark-light art-timeline-mark-light4"></div>
+                                    <div class="art-timeline-mark art-timeline-mark4"></div>
+                                    <div class="projectPanelInner educationArtEffectsContainer">
+
+                                        <div class="container itemInnerContent itemInnerExperienceContentMarker2 p-0 pb-4">
+                                            <div class="container educationInnerHeader p-0">
+                                                <div class="container leftSide col-12 p-0">
+                                                    <h5 class="projectPanelInnerContents p-2">
+                                                        McCabe McGinn
+                                                    </h5>
+                                                    <h5 class="educationPosition p-1">
+                                                        Web Developer
+                                                    </h5>
+                                                </div>
+                                                <div class="container rightSide col-md-10 col-9 ml-0 p-0">
+                                                    <div class="date">
+                                                        <span> dec 2019 - july 2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projectPanelInnerContents">
+                                                <div>
+                                                    <p class="mb-0">Designed and developed a website for one of Ireland's leading fit-out specialists using sprint planning sessions and remote collaboration.</p>
+                                                </div>
+                                            </div>
+                                            <div class="educationExperienceLink pt-4">
+                                                <a href="resumeProject.html">
+                                                    View website
+                                                    <i class="fa fa-chevron-right pl-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Experience Overview 3 : SAP -->
+                                <div class="projectPanel container EducationInnerContainer h-auto mb-md-4 mb-0 pb-4">
+
+                                    <div class="art-timeline-mark-light art-timeline-mark-light5"></div>
+                                    <div class="art-timeline-mark art-timeline-mark5"></div>
+                                    <div class="projectPanelInner educationArtEffectsContainer">
+
+                                        <div class="container itemInnerContent itemInnerExperienceContentMarker5 p-0 pb-4">
+                                            <div class="container educationInnerHeader p-0">
+                                                <div class="container leftSide col-12 p-0">
+                                                    <h5 class="projectPanelInnerContents p-2">
+                                                        SAP
+                                                    </h5>
+                                                    <h5 class="educationPosition p-1">
+                                                        S/4HANA Application Intern
+                                                    </h5>
+                                                </div>
+                                                <div class="container rightSide col-md-10 col-9 ml-0 p-0">
+                                                    <div class="date">
+                                                        <span> jan 2019 - aug 2020 </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="projectPanelInnerContents" id="contact">
+                                                <div>
+                                                    <p class="mb-0">Providing SAP services to customers and participated in development projects.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        </div>
+
+
+                        <!-- ************** Contact Information Section *********** -->
+                        <div class="row container ProjectsTitleContainer m-0">
+                          <h4 class="sectionTitle pl-2 pt-md-0 pt-4 pb-md-4 pb-3">
+                            Contact Information
+                          </h4>
+                        </div>
+                        <div class="row contactSection">
+
+                            <div class="projectPanel container contactProjectPanel col-md-6 col-12 mb-4 pl-md-5" id="projectPanel1">
+                                <div id="contactLink"></div>
+                                <div class="container projectPanelInner personalInfo contactInfo">
+                                    <ul class="pt-1 m-0">
+                                      <li>
+                                          <h6>Email:</h6>
+                                          <a class="email" href="mailto:paul@mccabe-mcginn.ie?subject=Personal Website Enquiry">
+                                            <span>enquires@arononeill.ie</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <h6>LinkedIn:</h6>
+                                          <a class="teamLinkedIn" href="https://www.linkedin.com/in/aron-o-neill-474757161/"><span>Aron O'Neill</span></a>
+                                      </li>
+                                      <li>
+                                          <h6>Mobile:</h6>
+                                          <a class="phone-header text-right" href="tel:00353862314000"><span>+353 86 231 4000</span></a>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="projectPanel container contactProjectPanel col-md-6 col-12 mb-4 pr-md-5" id="projectPanel1">
+                                <div class="container projectPanelInner personalInfo contactInfo">
+                                    <ul class="pt-md-4 pt-5 m-0">
+                                      <li>
+                                          <h6>Country:</h6>
+                                          <span>Ireland</span>
+                                      </li>
+                                      <li>
+                                          <h6>City:</h6>
+                                          <span>Dublin</span>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row container col-12 ProjectsTitleContainer m-0">
+                          <h4 class="sectionTitle pl-2 pt-md-0 pt-4 pb-md-4 pb-3">
+                            Get in touch
+                          </h4>
+                        </div>
+                        <!-- ************* Contact Form ************************* -->
+                        <div class="row container contactFormRow mr-0 ml-0">
+                            <div class="col-12 outerFormContainer">
+                                <form
+                                  id="contactForm"
+                                  class="contactForm"
+                                  name="sentMessage"
+                                >
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group">
+                                          <span class="formInputSpan">
+                                              <input
+                                                class="form-control"
+                                                id="name"
+                                                label="Enquiry"
+                                                name="enquiry"
+                                                type="text"
+                                                placeholder="Enuquiry"
+                                                required="required"
+                                                data-validation-required-message="Please enter your name."
+                                              />
+                                              <label><i class="fa fa-edit"></i></label>
+                                          </span>
+                                          <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                      <span class="formInputSpan">
+                                          <input
+                                            class="form-control"
+                                            id="name"
+                                            label="Name"
+                                            placeholder="Name"
+                                            name="name"
+                                            type="text"
+                                            required="required"
+                                            data-validation-required-message="Please enter your name."
+                                          />
+                                          <label><i class="fas fa-user"></i></label>
+                                      </span>
+                                      <p class="help-block text-danger"></p>
+                                    </div>
+                                      <div class="validation"></div>
+                                      <div class="form-group">
+                                        <span class="formInputSpan">
+                                            <input
+                                              class="form-control"
+                                              id="email"
+                                              placeholder="Email"
+                                              name="email"
+                                              type="email"
+                                              required="required"
+                                              data-validation-required-message="Please enter your email address."
+                                            />
+                                            <label><i class="fas fa-at"></i></label>
+                                        </span>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                      <div class="form-group">
+                                          <span class="formInputSpan">
+                                            <input
+                                              class="form-control"
+                                              id="phone"
+                                              name="phone"
+                                              type="tel"
+                                              placeholder="Phone"
+                                            />
+                                            <label><i class="fas fa-user"></i></label>
+                                          </span>
+                                            <p class="help-block text-danger"></p>
+                                      </div>
+                                      <div class="form-group">
+                                        <span class="formInputSpan">
+                                            <textarea
+                                              class="contactUsTexArea form-control"
+                                              id="message"
+                                              name="message"
+                                              required="required"
+                                              placeholder="Message"
+                                              data-validation-required-message="Please enter a message."
+                                            ></textarea>
+                                            <label><i class="fas fa-envelope"></i></label>
+                                        </span>
+                                        <p class="help-block text-danger"></p>
+                                      </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-md-left text-center">
+                                      <div id="success"></div>
+                                        <a class="email" href="mailto:enquires@arononeill.ie.ie?subject=Personal Enquiry">
+                                          <button
+                                            id="sendMessageButton"
+                                            class="btn btn-primary btn-xl text-uppercase"
+                                            type="submit"
+                                          >
+                                            Send Message
+                                          </button>
+                                        </a>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="row container FooterRow2 pt-0 pr-0 mr-0">
+
+                            <div class="footerOuterContainer w-100">
+                                <div class="subContainer FooterContainer2 w-100">
+                                    <footer class="row footer">
+                                        <div class="col-6 FooterContainer2 text-left p-md-2 p-1">
+                                            <p class="p-0 m-0 d-md-block d-none">© 2021 All Rights Reserved.</p>
+                                            <p class="p-0 m-0 d-md-none d-block">© 2021 All Rights Reserved.</p>
+
+                                        </div>
+                                        <div class="col-6 text-md-right text-left p-md-2 p-0">
+                                            Email:
+                                            <a class="emailFooterLink" href="mailto:enquires@arononeill.ie" target="_blank">enquires@arononeill.ie
+                                            </a>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+              </div>
+          </div>
+
+          <!-- Collapsed Right Sidebar -->
+          <div class="rightSideBar" id="navbarSupportedContent">
+
+            <div class="rightSideBarFrame">
+              <div class="rightMenuHeader d-lg-none d-block">
+                <a id="rightMenuCloseHref1">
+                  <i class="fa fa-close rightMenuCloseBtn"></i>
+                </a>
+              </div>
+              <ul class="nav navbar-nav rightNavMenuUl w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" id="hrefLink1" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="hrefLink2" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="hrefLink3" href="#educationLink">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="hrefLink4" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="hrefLink5" href="#contactLink">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+
+          <!-- jQuery CDN - Slim version (=without AJAX) -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- Popper.JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+          <!-- Script -->
+          <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+
+        <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+
+        <script type="text/javascript" src="{% static 'js/script.js' %}" ></script>
+
+    </body>
+    {% endblock %}
+</html>
